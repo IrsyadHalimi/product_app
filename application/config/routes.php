@@ -58,6 +58,6 @@ $route['product'] = 'product/index';
 $route['product/bisa-dijual'] = 'product/bisa_dijual';
 
 $route['product/create'] = 'product/create';
-$route['product/update'] = 'product/update';
+$route['product/update/(:num)'] = 'product/update/$1';
 $route['product/edit/(:num)'] = 'product/edit/$1';
 $route['product/delete/(:num)'] = 'product/delete/$1';

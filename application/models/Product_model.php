@@ -5,9 +5,11 @@ class Product_model extends CI_Model
 {
   public function get_all_product() 
   {
-    $this->db->select('*');
+    $this->db->select('produk.*, kategori.nama_kategori, status.nama_status');
     $this->db->from('produk');
-    $this->db->where('status_id', 'bisa dijual');
+    $this->db->join('kategori', 'kategori.id_kategori = produk.kategori_id', 'left');
+    $this->db->join('status', 'status.id_status = produk.status_id', 'left');
+    $this->db->where('status.nama_status', 'bisa dijual');
     return $this->db->get()->result_array();
   }
 

@@ -21,10 +21,10 @@
                 <td><?= $i++ ?></td>
                 <td><?= $p['nama_produk'] ?></td>
                 <td><?= $p['harga'] ?></td>
-                <td><?= $p['kategori_id'] ?></td>
-                <td><?= $p['status_id'] ?></td>
+                <td><?= $p['nama_kategori'] ?></td>
+                <td><?= $p['nama_status'] ?></td>
                 <td>
-                    <a href="<?= site_url('product/edit/' . $p['id_produk']) ?>">Edit</a>
+                    <a href="<?= site_url('product/update/' . $p['id_produk']) ?>">Edit</a>
                     <a href="<?= site_url('product/delete/' . $p['id_produk']) ?>" onclick="return confirm('Yakin hapus?')">Hapus</a>
                 </td>
             </tr>
