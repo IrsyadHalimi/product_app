@@ -9,12 +9,29 @@ class Product_model extends CI_Model
     $this->db->from('produk');
     $this->db->join('kategori', 'kategori.id_kategori = produk.kategori_id', 'left');
     $this->db->join('status', 'status.id_status = produk.status_id', 'left');
+    return $this->db->get()->result_array();
+  }
+  
+  public function get_sell_product() 
+  {
+    $this->db->select('produk.*, kategori.nama_kategori, status.nama_status');
+    $this->db->from('produk');
+    $this->db->join('kategori', 'kategori.id_kategori = produk.kategori_id', 'left');
+    $this->db->join('status', 'status.id_status = produk.status_id', 'left');
     $this->db->where('status.nama_status', 'bisa dijual');
     return $this->db->get()->result_array();
   }
 
   public function insert_product($data) {
     return $this->db->insert('produk', $data);
+  }
+
+  public function get_max_id() {
+    $this->db->select_max('id_produk');
+    $query = $this->db->get('produk');
+
+    $row = $query->row();
+    return $row ? $row->id_produk : 0;
   }
 
   public function get_product_by_id($id) {

@@ -49,15 +49,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'product/show_sell_product';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['fetch-api'] = 'product/fetch_api';
 $route['product'] = 'product/index';
-$route['product/bisa-dijual'] = 'product/bisa_dijual';
-
+$route['product/sell'] = 'product/show_sell_product';
 $route['product/create'] = 'product/create';
 $route['product/update/(:num)'] = 'product/update/$1';
 $route['product/edit/(:num)'] = 'product/edit/$1';
 $route['product/delete/(:num)'] = 'product/delete/$1';
+
+$route['category'] = 'category/index';
+$route['category/create'] = 'category/create';
+$route['category/update/(:num)'] = 'category/update/$1';
+$route['category/edit/(:num)'] = 'category/edit/$1';
+$route['category/delete/(:num)'] = 'category/delete/$1';
+
+$route['status'] = 'status/index';
+$route['status/create'] = 'status/create';
+$route['status/update/(:num)'] = 'status/update/$1';
+$route['status/edit/(:num)'] = 'status/edit/$1';
+$route['status/delete/(:num)'] = 'status/delete/$1';
