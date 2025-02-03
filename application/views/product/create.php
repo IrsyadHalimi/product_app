@@ -39,9 +39,10 @@
                 </select>
                 <?php echo form_error('status', '<div class="text-danger">', '</div>'); ?>
             </div>
-            <button onclick="javascript:history.back()" class="btn btn-warning">Kembali</button>
+			<a href="<?= site_url('product/') ?>" class="btn btn-warning">Kembali</a>
             <button type="submit" class="btn btn-primary">Simpan</button>
             <?php echo form_close(); ?>
         </div>
     </div>
 </div>
+

@@ -10,7 +10,7 @@
                 <input type="text" class="form-control" id="username" name="username" value="<?php echo set_value('username'); ?>">
                 <?php echo form_error('username', '<div class="text-danger">', '</div>'); ?>
             </div>
-            <button onclick="javascript:history.back()" class="btn btn-warning">Kembali</button>
+			<a href="<?= site_url('product/') ?>" class="btn btn-warning">Kembali</a>
             <button type="submit" class="btn btn-primary">Simpan</button>
             <?php echo form_close(); ?>
         </div>

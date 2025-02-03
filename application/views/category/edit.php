@@ -10,7 +10,7 @@
                 <input type="text" class="form-control" id="category_name" name="category_name" value="<?php echo set_value('category_name', $category['nama_kategori']); ?>">
                 <?php echo form_error('category_name', '<div class="text-danger">', '</div>'); ?>
             </div>
-            <button onclick="javascript:history.back()" class="btn btn-warning">Kembali</button>
+			<a href="<?= site_url('category/') ?>" class="btn btn-warning">Kembali</a>
             <button type="submit" class="btn btn-primary">Update</button>
             <?php echo form_close(); ?>
         </div>

@@ -10,8 +10,8 @@
                 <input type="text" class="form-control" id="status_name" name="status_name" value="<?php echo set_value('status_name'); ?>">
                 <?php echo form_error('status_name', '<div class="text-danger">', '</div>'); ?>
             </div>
-            <button onclick="javascript:history.back()" class="btn btn-warning">Kembali</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+			<a href="<?= site_url('status/') ?>" class="btn btn-warning">Kembali</a>
+			<button type="submit" class="btn btn-primary">Simpan</button>
             <?php echo form_close(); ?>
         </div>
     </div>
