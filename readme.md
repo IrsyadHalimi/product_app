@@ -237,6 +237,12 @@ public function get_sell_product()
 - **Edit Produk, Kategori, Status**
 - **Hapus Produk, Kategori, Status dengan Konfirmasi**
 
+## Class Diagram
+![Deskripsi Gambar](screen_captures/class-diagram.png)
+## Flow Chart API Fetching
+![Deskripsi Gambar](screen_captures/flow-chart.png)
+
+
 ## Deployment
 Untuk deployment ke server, gunakan langkah berikut:
 1. Upload file project ke hosting
