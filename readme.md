@@ -83,6 +83,7 @@ $db['default'] = array(
 ### 4. Jalankan Aplikasi
 
 Buka di browser: `http://localhost:8080/product_app/`
+Pastikan Port sudah sesuai (8080), atau ubah port base_url di file config: product_app\application\config\config.php 
 
 ## Struktur Proyek
 ```
