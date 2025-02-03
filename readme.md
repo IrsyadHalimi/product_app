@@ -65,25 +65,32 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-    'dsn'   => '',
-    'hostname' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'database' => 'nama_database',
-    'dbdriver' => 'mysqli',
-    'dbprefix' => '',
-    'pconnect' => FALSE,
-    'db_debug' => TRUE,
-    'cache_on' => FALSE,
-    'char_set' => 'utf8',
-    'dbcollat' => 'utf8_general_ci'
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'nama_database',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
 );
 ```
 
 ### 4. Jalankan Aplikasi
 
 Buka di browser: `http://localhost:8080/product_app/`
-Pastikan Port sudah sesuai (8080), atau ubah port base_url di file config: product_app\application\config\config.php 
+Pastikan Port sudah sesuai (8080), atau ubah port base_url di file config: `product_app\application\config\config.php `
 
 ## Struktur Proyek
 ```
