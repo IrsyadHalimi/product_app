@@ -10,7 +10,7 @@
         <div class="card-body">
             <div class="mb-4">
                 <a href="<?= site_url('product/create') ?>" class="btn btn-primary">Tambah Produk</a>
-                <a href="<?= site_url('product/fetch_api') ?>" class="btn btn-warning">Ambil Data dari API</a>
+                <a href="<?= site_url('product/username_api_input') ?>" class="btn btn-warning">Ambil Data dari API</a>
                 <?php if (isset($title) && $title == 'Produk Dijual') : ?>
                     <a href="<?= site_url('product/index') ?>" class="btn btn-info">Lihat Semua Produk</a>
                 <?php else : ?>

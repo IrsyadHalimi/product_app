@@ -53,9 +53,10 @@ $route['default_controller'] = 'product/show_sell_product';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['fetch-api'] = 'product/fetch_api';
+$route['product/fetch-api'] = 'product/fetch_api';
 $route['product'] = 'product/index';
 $route['product/sell'] = 'product/show_sell_product';
+$route['product/username_api_input'] = 'product/username_api_input';
 $route['product/create'] = 'product/create';
 $route['product/update/(:num)'] = 'product/update/$1';
 $route['product/edit/(:num)'] = 'product/edit/$1';
